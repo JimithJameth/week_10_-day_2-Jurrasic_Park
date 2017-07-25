@@ -29,6 +29,7 @@ describe("Enclosure",function(){
   });
 
   it("should be able to remove a type of dinosaur",function(){
+    assert.strictEqual(0, enclosure.enclosureArray.length);
     enclosure.addDinosaur(new Dinosaur("Dilophosaurus",4));
     enclosure.addDinosaur(new Dinosaur("Velociraptor",2));
     enclosure.addDinosaur(new Dinosaur("Triceratops",3));
