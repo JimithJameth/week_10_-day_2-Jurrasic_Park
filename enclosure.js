@@ -12,7 +12,7 @@ Enclosure.prototype = {
 
   removeDinosaur: function(type){
     for(var dinosaur of this.enclosureArray){
-      if (dinosaur.ype === type){
+      if (dinosaur.type === type){
       }
 
       var index = this.enclosureArray.indexOf(dinosaur);
