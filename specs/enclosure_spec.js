@@ -12,4 +12,9 @@ describe("Enclosure",function(){
   it("should have an empty park at the start", function(){
       assert.strictEqual( 0, enclosure.enclosureArray.length);
   });
+
+  it("should have 1 dinosaur in the array", function(){
+    enclosure.addDinosaur(new Dinosaur("Dilophosaurus",4));
+    assert.strictEqual(1, enclosure.enclosureArray.length);
+  });
 });
