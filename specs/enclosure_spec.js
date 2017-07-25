@@ -27,4 +27,15 @@ describe("Enclosure",function(){
     enclosure.addDinosaur(new Dinosaur("Tyrannosaurus",0));
     assert.strictEqual(6, enclosure.enclosureArray.length);
   });
+
+  it("should be able to remove a type of dinosaur",function(){
+    enclosure.addDinosaur(new Dinosaur("Dilophosaurus",4));
+    enclosure.addDinosaur(new Dinosaur("Velociraptor",2));
+    enclosure.addDinosaur(new Dinosaur("Triceratops",3));
+    enclosure.addDinosaur(new Dinosaur("Stegosaurus",2));
+    enclosure.addDinosaur(new Dinosaur("Brachiosaurus",4));
+    enclosure.addDinosaur(new Dinosaur("Tyrannosaurus",0));
+    enclosure.removeDinosaur("Tyrannosaurus");
+    assert.strictEqual(5, enclosure.enclosureArray.length);
+  });
 });
