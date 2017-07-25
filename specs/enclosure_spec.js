@@ -17,4 +17,14 @@ describe("Enclosure",function(){
     enclosure.addDinosaur(new Dinosaur("Dilophosaurus",4));
     assert.strictEqual(1, enclosure.enclosureArray.length);
   });
+
+  it("should be able to add multiple types of dinosaurs",function(){
+    enclosure.addDinosaur(new Dinosaur("Dilophosaurus",4));
+    enclosure.addDinosaur(new Dinosaur("Velociraptor",2));
+    enclosure.addDinosaur(new Dinosaur("Triceratops",3));
+    enclosure.addDinosaur(new Dinosaur("Stegosaurus",2));
+    enclosure.addDinosaur(new Dinosaur("Brachiosaurus",4));
+    enclosure.addDinosaur(new Dinosaur("Tyrannosaurus",0));
+    assert.strictEqual(6, enclosure.enclosureArray.length);
+  });
 });
