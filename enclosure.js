@@ -13,10 +13,11 @@ Enclosure.prototype = {
   removeDinosaur: function(type){
     for(var dinosaur of this.enclosureArray){
       if (dinosaur.type === type){
-      }
+        
 
-      var index = this.enclosureArray.indexOf(dinosaur);
-      this.enclosureArray.splice(index, 1);
+        var index = this.enclosureArray.indexOf(dinosaur);
+        this.enclosureArray.splice(index, 1);
+      }
     }
   }
 }
